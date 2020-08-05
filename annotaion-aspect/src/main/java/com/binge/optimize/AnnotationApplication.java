@@ -1,13 +1,13 @@
-package com.binge.optimizedemo;
+package com.binge.optimize;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
-public class OptimizeDemoApplication {
-
+public class AnnotationApplication {
     public static void main(String[] args) {
-        SpringApplication.run(OptimizeDemoApplication.class, args);
+        SpringApplication.run(AnnotationApplication.class);
     }
-
 }
