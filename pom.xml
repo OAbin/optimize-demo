@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>annotaion-aspect</module>
+        <module>concurrent-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
