@@ -20,7 +20,7 @@ public class ConcurrentApplicationTests {
     @Autowired
     private UserServiceImpl userService;
 
-    @Test public void testConcurrent(){
+    @Test public void testConcurrent() throws InterruptedException {
         for (int i = 0;i < MAX_SIZE; i++){
             new Thread(()->{
                 downLatch.countDown();
@@ -32,6 +32,7 @@ public class ConcurrentApplicationTests {
                     e.printStackTrace();
                 }
             }).start();
+            Thread.sleep(2000);
         }
     }
 }
